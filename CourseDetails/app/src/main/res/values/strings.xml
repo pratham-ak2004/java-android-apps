@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CourseDetails</string>
+    <string-array name="courses">
+        <item>Civil Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Computer Science Engineering</item>
+        <item>Electronics and Communication Engineering</item>
+    </string-array>
+
+</resources>
