@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         courseSpinner = findViewById(R.id.courseSpinner);
         buttonShowToast = findViewById(R.id.buttonShowToast);
 
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.courses,

@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     Button capButton;
     ImageView imgView;
 
+    View view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         capButton = (Button) findViewById(R.id.captureButton);
         imgView = (ImageView) findViewById(R.id.imageView);
+        // view = findViewById(R.layout.);
 
 
         capButton.setOnClickListener(new View.OnClickListener() {
@@ -39,11 +42,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // function to capture image
     private void captureImage() {
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(cameraIntent,1);
     }
 
+    // function to display image after capturing
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
